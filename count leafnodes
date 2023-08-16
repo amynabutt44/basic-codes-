@@ -1,0 +1,14 @@
+int countLeaves(Node* root)
+{
+  if(root==nullptr )
+  {
+      return 0;
+  }
+  if(root->left == nullptr && root->right == nullptr)
+  {
+      return 1;
+  }
+  int leftnode= countLeaves(root->left);
+  int rightnode = countLeaves(root->right);
+  return leftnode + rightnode;
+}
