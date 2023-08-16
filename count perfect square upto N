@@ -1,0 +1,12 @@
+   int countSquares(int N) {
+        int count=0;
+        int  root =1;
+        while(root* root <N)
+        {
+            count++;
+            root++;
+            
+        }
+        return count;
+    }
+};
